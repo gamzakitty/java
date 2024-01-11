@@ -1,0 +1,17 @@
+package casting;
+
+public class MainCalss1 {
+
+	public static void main(String[] args) {
+		// Promotion이 적용되면 자식클래스에만 정의된 요소 조회 불가능
+		
+		Parent p = new Child();
+		p.method1(); //Parent에만 정의된 메서드
+		p.method2(); // 오버라이딩 된 메서드는 타입 상관없이 인스턴스 내 자식쪽 호출
+		p.method3(); // p 타입 변수로는 자식쪽에만 정의된 요소는 호출 불가능
+		System.out.println("_____________________________");
+
+		
+	}
+
+}

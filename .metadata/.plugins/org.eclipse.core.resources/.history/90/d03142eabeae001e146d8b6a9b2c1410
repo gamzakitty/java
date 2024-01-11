@@ -1,0 +1,5 @@
+package noinherit;
+
+public class Warrior {
+
+}
